@@ -1,25 +1,25 @@
-package com.sajeewa.student.entity;
+package com.sajeewa.school.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
 import lombok.*;
+
+import java.util.List;
 
 @Entity
 
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class Student {
+public class School {
     @Id
     @GeneratedValue
 
     private Integer id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private String email;
 
 //    @ManyToOne
-    private Integer schoolId;
+//    private List<Integer> studentIds;
 }
