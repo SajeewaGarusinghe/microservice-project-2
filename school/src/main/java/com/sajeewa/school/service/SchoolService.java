@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SchoolService {
     private final SchoolRepository repository;
-    private StudentClient client;
+    private final StudentClient client;//try without final
 
     public void saveSchool(School school) {
         repository.save(school);

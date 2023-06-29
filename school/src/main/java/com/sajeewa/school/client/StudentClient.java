@@ -9,10 +9,10 @@ import java.util.List;
 
 //following responsible for establishing connection and making an HTTP call to student API
 //url below is externalies through application_properties
-@FeignClient (name = "student-service",url="${application.config.students-url}")
+@FeignClient(name = "student-service", url = "${application.config.students-url}")
 public interface StudentClient {
 
-@GetMapping("/school/{school-id}")
+    @GetMapping("/school/{school-id}")
     List<Student> findAllStudentsBySchool(@PathVariable("school-id") Integer schoolId);
-
 }
+

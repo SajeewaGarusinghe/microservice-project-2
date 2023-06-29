@@ -8,12 +8,10 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-//@RequiredArgsConstructor
 @Builder
 public class School {
     @Id
@@ -23,6 +21,4 @@ public class School {
     private String name;
     private String email;
 
-//    @ManyToOne
-//    private List<Integer> studentIds;
 }
