@@ -9,15 +9,20 @@
         <option value="$PROJECT_DIR$/student/pom.xml" />
         <option value="$PROJECT_DIR$/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/school/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/student/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/discovery/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/school/pom.xml" />
-        <option value="$PROJECT_DIR$/student/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/school/pom.xml" />
+        <option value="$PROJECT_DIR$/../../tutorials2/microservice-project-2/student/pom.xml" />
       </set>
     </option>
   </component>
