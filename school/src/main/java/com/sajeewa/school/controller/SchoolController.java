@@ -1,6 +1,7 @@
 package com.sajeewa.school.controller;
 
 import com.sajeewa.school.entity.School;
+import com.sajeewa.school.service.FullSchoolResponse;
 import com.sajeewa.school.service.SchoolService;
 
 import lombok.RequiredArgsConstructor;
@@ -12,7 +13,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/schools")
-@CrossOrigin
 @RequiredArgsConstructor
 public class SchoolController {
     private final SchoolService service;
@@ -26,5 +26,10 @@ public class SchoolController {
     @GetMapping
     public ResponseEntity<List<School>> findAllStudents() {
         return ResponseEntity.ok(service.findAllSchools());
+    }
+
+    @GetMapping("/with-student/{school-id}")
+    public ResponseEntity<FullSchoolResponse> findAllSchoolsWithStudents(@PathVariable("school-id") Integer schoolId) {
+        return ResponseEntity.ok(service.findAllSchoolsWithStudents(schoolId));
     }
 }

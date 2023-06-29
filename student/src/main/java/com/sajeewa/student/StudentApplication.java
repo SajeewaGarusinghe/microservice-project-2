@@ -1,5 +1,6 @@
 package com.sajeewa.student;
 
+import com.sajeewa.student.entity.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,10 @@ public class StudentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
+
+//		Student a=new Student();
+//		System.out.println("---------------------------------------");
+//		System.out.println(a);
 	}
 
 }

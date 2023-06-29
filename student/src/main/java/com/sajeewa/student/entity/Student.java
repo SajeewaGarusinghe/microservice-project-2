@@ -10,7 +10,10 @@ import lombok.*;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+
 public class Student {
     @Id
     @GeneratedValue
@@ -21,5 +24,6 @@ public class Student {
     private String email;
 
 //    @ManyToOne
+//    @NonNull
     private Integer schoolId;
 }

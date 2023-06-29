@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/students")
 @RequiredArgsConstructor
-@CrossOrigin
+
 public class StudentController {
     private final  StudentService service;
 
@@ -25,5 +25,9 @@ public class StudentController {
     @GetMapping
     public ResponseEntity<List<Student>> findAllStudents() {
         return ResponseEntity.ok(service.findAllStudents());
+    }
+    @GetMapping("/school/{school-id}")
+    public ResponseEntity<List<Student>> findAllStudentsBySchool(@PathVariable("school-id") Integer schoolId) {
+        return ResponseEntity.ok(service.findAllStudentsBySchool(schoolId));
     }
 }

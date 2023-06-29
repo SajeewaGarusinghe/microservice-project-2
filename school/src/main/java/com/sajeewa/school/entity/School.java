@@ -11,7 +11,10 @@ import java.util.List;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
+//@RequiredArgsConstructor
+@Builder
 public class School {
     @Id
     @GeneratedValue
