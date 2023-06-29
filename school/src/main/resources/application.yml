@@ -31,4 +31,5 @@ spring:
 
 application:
   config:
-    students-url: http://localhost:8090/api/v1/students  #setting port for the students service url
+#    students-url: http://localhost:8090/api/v1/students  #setting port for the students service url
+    students-url: http://localhost:8222/api/v1/students  #acess students service url via api gateway
