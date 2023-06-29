@@ -1,4 +1,4 @@
-# Microservices Demo Project
+# Microservices Project
 
 ![alt text](diagram.png)
 
