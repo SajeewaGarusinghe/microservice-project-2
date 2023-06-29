@@ -1,37 +1,7 @@
 
-#eureka:
-#  instance:
-#    hostname: localhost
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka
-
-#server:
-#  port: 8070
-
-#---------------all the other configurations added to the config-server configurations-------------
 spring:
   application:
     name: schools  #name of the application
 
   config:
     import: optional:configserver::http://localhost:8888
-
-#  datasource:
-#    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://localhost:5432/schools
-#    username: postgres
-#    password: 1234
-#
-#  jpa:
-#    hibernate:
-#      ddl-auto: create
-#
-#    database: postgresql
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
-#
-#
-#application:
-#  config:
-##    students-url: http://localhost:8090/api/v1/students  #setting port for the students service url
-#    students-url: http://localhost:8222/api/v1/students  #acess students service url via api gateway

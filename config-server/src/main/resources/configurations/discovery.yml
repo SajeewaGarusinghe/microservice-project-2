@@ -10,8 +10,5 @@ eureka:
 
 server:
   port: 8761
-spring:
-  application:
-    name: discovery
-#  config:
-#    import: optional:configserver:http://localhost:8888
+
+
