@@ -1,33 +1,5 @@
-#server:
-#  port: 8222  #this application runs on this port
-#
-#eureka:
-#  client:
-#    register-with-eureka: false  #i don't want to register this microservice with eureka
-
-
-#---------all other commented since its added to the main configuration file ---------------
 spring:
   application:
     name: gateway
   config:
     import: optional:configserver:http://localhost:8888
-
-#  cloud:
-#    gateway:
-#      discovery:
-#        locator:
-#          enabled: true #want to fetch information/data from discovery server
-#      routes:
-#        - id: students
-#          uri:  http://localhost:8090  #where should api gateway redirects the call
-#          predicates:
-#            - Path=/api/v1/students/**
-#        - id: schools
-#          uri:  http://localhost:8070
-#          predicates:
-#            - Path=/api/v1/schools/**
-
-
-
-

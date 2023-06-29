@@ -1,4 +1,3 @@
-
 eureka:
   instance:
     hostname: localhost
@@ -6,25 +5,28 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+
 server:
   port: 8070
 spring:
   application:
-    name: schools  #name of the application
-
+    name: schools
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/schools
     username: postgres
     password: 1234
-
   jpa:
     hibernate:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-
 application:
   config:
-    students-url: http://localhost:8222/api/v1/students  #acess students service url via api gateway
+    students-url: http://localhost:8222/api/v1/students
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

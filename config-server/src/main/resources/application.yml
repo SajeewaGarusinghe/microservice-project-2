@@ -1,4 +1,3 @@
-
 server:
   port: 8888
 
@@ -11,5 +10,4 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:/configurations #where spring config server is going to fetch all the configurations needed
-
+          search-locations: classpath:/configurations
